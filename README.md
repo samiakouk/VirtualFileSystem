@@ -16,51 +16,48 @@ When your program starts, the user is greeted and presented with a prompt to ent
 As a user navigates through the file system, you must keep track of the current inode folder location.
 Note: in blue are user specified names or parameters
 1. help
-○ Prints the following menu of commands
+ ○ Prints the following menu of commands
 2. pwd
-○ Prints the path of current inode
-○ Hint: Use a Stack based implementation
+ ○ Prints the path of current inode
 3. ls
-○ Prints the children of the current inode (if folder, error otherwise)
-○ Each line shows: filetype (dir/file), filename, size, date
-○ ls sort: order by descending file size, use bubble sort
+ ○ Prints the children of the current inode (if folder, error otherwise)
+ ○ Each line shows: filetype (dir/file), filename, size, date
+ ○ ls sort: order by descending file size, use bubble sort
 4. mkdir foldername
-○ Creates a folder under the current folder
+ ○ Creates a folder under the current folder
 5. touch filename size
-○ Creates a file under the current inode location with the specified filename, size, and current datetime
+ ○ Creates a file under the current inode location with the specified filename, size, and current datetime
 6. cd
-○ cd foldername: change current inode to the specified folder
-○ cd filename: return an error
-○ cd .. changes current inode to its parent folder
-○ cd - changes current inode to the previous working directory
-○ cd changes current inode to root
-○ cd /my/path/name changes the current inode to the specified path if it exists
+ ○ cd foldername: change current inode to the specified folder
+ ○ cd filename: return an error
+ ○ cd .. changes current inode to its parent folder
+ ○ cd - changes current inode to the previous working directory
+ ○ cd changes current inode to root
+ ○ cd /my/path/name changes the current inode to the specified path if it exists
 7. (find foldername) or (find filename) (Bonus point 0.5 !"#$%&'()*+,-)
-○ Returns the path of the file (or the folder) if it exists
-○ You should print all matching paths. The same name may exist in different locations ○ Starts the search from the root folder
+ ○ Returns the path of the file (or the folder) if it exists
+ ○ You should print all matching paths. The same name may exist in different locations ○ Starts the search from the root folder
 8. mv filename foldername ((Bonus point 0.5 !"#$%&'()*+,-)
-○ Moves a file located under the current inode location, to the specified folder path
-○ The specified file and folder have to be one of the current inode’s children (an error is returned otherwise)
+ ○ Moves a file located under the current inode location, to the specified folder path
+ ○ The specified file and folder have to be one of the current inode’s children (an error is returned otherwise)
 9. (rm foldername) or (rm filename)
-○ Removes the specified folder or file and puts it in a Queue of MAXBIN=10
-○ The specified file or folder has to be one of the current inode’s children (an error is returned otherwise)
- 
-○ Hint: Use a Queue based implementation
-10. Implement mv and rm on arbitrary inode locations ((Bonus point 0.5 !"#$%&'()*+,-)
-○ The inode and destination folder are specified using a path
-○ Examples:
+ ○ Removes the specified folder or file and puts it in a Queue of MAXBIN=10
+ ○ The specified file or folder has to be one of the current inode’s children (an error is returned otherwise)
+10. Implement mv and rm on arbitrary inode locations 
+ ○ The inode and destination folder are specified using a path
+ ○ Examples:
    ■ mv /user/contact.txt /system/tmp ■ mv /user/tmp /user/
    ■ rm /user/contact.txt
    ■ rm /user/tmp
 11. size foldername or filename
-○ Returns the total size of the folder, including all its subfiles, or the size of the file
+ ○ Returns the total size of the folder, including all its subfiles, or the size of the file
 12. emptybin
-○ Empties the bin
+ ○ Empties the bin
 13. showbin
-○ Shows the oldest inode of the bin, including its path
+ ○ Shows the oldest inode of the bin, including its path
 14. recover (Bonus point 0.5 !"#$%&'()*+,-)
-○ Reinstates the oldest inode back from the bin to its original position in the tree (if the path doesn’t exist anymore, an error is returned)
+ ○ Reinstates the oldest inode back from the bin to its original position in the tree (if the path doesn’t exist anymore, an error is returned)
 15. Exit
-○ The program stops. If you implement the bonus feature then the filesystem is saved in the format of the vfs.dat example
+ ○ The program stops. If you implement the bonus feature then the filesystem is saved in the format of the vfs.dat example
 
 
