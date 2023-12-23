@@ -45,7 +45,7 @@ Note: in blue are user specified names or parameters
  - The specified file or folder has to be one of the current inode’s children (an error is returned otherwise)
 10. Implement mv and rm on arbitrary inode locations 
  - The inode and destination folder are specified using a path
- = Examples:
+ - Examples:
    ■ mv /user/contact.txt /system/tmp ■ mv /user/tmp /user/
    ■ rm /user/contact.txt
    ■ rm /user/tmp
