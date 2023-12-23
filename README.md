@@ -37,7 +37,7 @@ Note: in blue are user specified names or parameters
 7. (find foldername) or (find filename) 
  - Returns the path of the file (or the folder) if it exists
  - You should print all matching paths. The same name may exist in different locations ○ Starts the search from the root folder
-8. mv filename foldername ((Bonus point 0.5 !"#$%&'()*+,-)
+8. mv filename foldername 
  - Moves a file located under the current inode location, to the specified folder path
  - The specified file and folder have to be one of the current inode’s children (an error is returned otherwise)
 9. (rm foldername) or (rm filename)
