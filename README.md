@@ -34,7 +34,7 @@ Note: in blue are user specified names or parameters
  - cd - changes current inode to the previous working directory
  - cd changes current inode to root
  - cd /my/path/name changes the current inode to the specified path if it exists
-7. (find foldername) or (find filename) (Bonus point 0.5 !"#$%&'()*+,-)
+7. (find foldername) or (find filename) 
  - Returns the path of the file (or the folder) if it exists
  - You should print all matching paths. The same name may exist in different locations ○ Starts the search from the root folder
 8. mv filename foldername ((Bonus point 0.5 !"#$%&'()*+,-)
@@ -55,7 +55,7 @@ Note: in blue are user specified names or parameters
  - Empties the bin
 13. showbin
  - Shows the oldest inode of the bin, including its path
-14. recover (Bonus point 0.5 !"#$%&'()*+,-)
+14. recover 
  - Reinstates the oldest inode back from the bin to its original position in the tree (if the path doesn’t exist anymore, an error is returned)
 15. Exit
  - The program stops. If you implement the bonus feature then the filesystem is saved in the format of the vfs.dat example
